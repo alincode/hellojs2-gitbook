@@ -36,7 +36,7 @@ a();
 ```js
 function a() {
   function b() {
-    console.log(myVar);
+    console.log(myVar); // ?
   }
   var myVar = 2;
   b();
@@ -52,10 +52,11 @@ a();
 
 ```js
 function a() {
+  b();
+  myVal = 2;
   function b() {
     console.log(myVar);
   }
-  b();
 }
 
 var myVar = 1;

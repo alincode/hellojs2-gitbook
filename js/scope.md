@@ -54,10 +54,12 @@ var message = 'hi';
 
 if(true){
   var message = 'bye';
-  console.log(message);
+  console.log('=== 1 ===');
+  console.log(message); // ?
 }
 
-console.log(message);
+console.log('=== 2 ===');
+console.log(message); // ?
 ```
 <!-- bye, bye -->
 
@@ -68,16 +70,19 @@ var message = 'hi';
 
 function greet() {
   var message = 'bye';
-  console.log(message);
+  console.log(message);   // ?
 }
 
-console.log(message);
+console.log('=== 1 ===');
+console.log(message); // ?
+console.log('=== 2 ===');
 greet();
-console.log(message);
+console.log('=== 3 ===');
+console.log(message); // ?
 ```
 <!-- hi, bye, hi -->
 
-**範例三**
+**範例三：忽略 var 的情況**
 
 ```js
 message = 'hi';
@@ -87,8 +92,11 @@ function greet() {
   console.log(message);
 }
 
+console.log('=== 1 ===');
 console.log(message);
+console.log('=== 2 ===');
 greet();
+console.log('=== 3 ===');
 console.log(message);
 ```
 <!-- hi, bye, bye -->

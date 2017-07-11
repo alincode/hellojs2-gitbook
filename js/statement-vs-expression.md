@@ -46,6 +46,8 @@ add(1, 2);
 
 ### statement （陳述式)
 
+<!--Statements are the building blocks of every program. -->
+
 * 完成某項任務的操作
 * 會產生附影響 (side effect)
 
@@ -159,3 +161,7 @@ function hi(name) {
 }
 hi('alincode');
 ```
+
+### 延伸閱讀
+
+* <https://edux.pjwstk.edu.pl/mat/260/lec/PRG2CPP_files/node37.html>

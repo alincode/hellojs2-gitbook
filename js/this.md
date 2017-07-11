@@ -38,26 +38,37 @@ public class CashCard extends Card {
 
 ### 範例
 
+<!-- 兩個 this 都指向 global -->
+
 **範例一**
 
 ```js
 // function statement
 function a() {
-  console.log(this);
   this.myValue = 'hello';
+  console.log(this);
 }
+console.log('=== 1 ===');
+a();
+```
+<!-- window -->
 
+```js
 // function expressions
 var b = function() {
+  this.myValue = 'hello';
   console.log(this);
 }
 
-a();
+console.log('=== 2 ===');
 b();
+```
+<!-- window -->
+
+```js
 console.log(myValue);
 ```
-<!-- window, window, hello -->
-<!-- 兩個 this 都指向 global -->
+<!-- hello -->
 
 **範例二**
 
@@ -68,7 +79,7 @@ var myObject = {
   name: 'alincode',
   log: function() {
     this.name = 'daisy';
-    console.log(this);
+    console.log(this);  // ?
   }
 }
 

@@ -9,6 +9,7 @@
   * Creation Phase 的時候，包含 Variable Environment, this 和 Outer Environment 都會被建立，而 this 有些情況指向 global environment、有些時候則是指向到某個物件 Object。
 * Execute Phase
 
+### 範例一
 
 ```js
 // 這是比較好的做法，不依賴 hoisting。
@@ -22,6 +23,8 @@ b();
 ```
 <!-- Hello World, 呼叫 b -->
 
+### 範例二
+
 ```js
 console.log(a); // ?
 b();
@@ -33,6 +36,8 @@ function b() {
 }
 ```
 <!-- undefined, 呼叫 b -->
+
+### 範例三
 
 ```js
 console.log(a); // ?
@@ -46,3 +51,4 @@ var b = function() {
 }
 ```
 <!-- undefined, undefined, b is not a function -->
+<!--function expressions are not hoisted. -->

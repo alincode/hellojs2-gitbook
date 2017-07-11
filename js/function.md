@@ -1,6 +1,6 @@
 # 函示 (Function)
 
-* 是 first class function
+* 是 first class function (一級函式)
 * 是一種特殊型態的物件，可以被呼叫 (invocable)。
 * 每個函式都有兩個參數 this 和 argument
 

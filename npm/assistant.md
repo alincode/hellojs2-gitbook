@@ -4,4 +4,7 @@
 
 1. npm init (npm init)
 1. 安裝套件 (npm install)
-1. 新增 script (npm run)
+  1. --save
+  1. --save-dev
+1. npm start 的使用
+1. 新增一個 script 命令 (npm run)

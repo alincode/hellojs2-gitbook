@@ -1,12 +1,12 @@
 # Summary
 
 * [NPM](npm/README.md)
-  * [NPM 初始化專案](npm/init.md)
-  * [NPM Package.json](npm/package.md)
-  * [NPM 套件管理](npm/install.md)
-  * [NPM 版本管理](npm/version.md)
-  * [NPM script](npm/script.md)
-  * [NPM 實用補充](npm/mise.md)
+  * [初始化專案](npm/init.md)
+  * [Package.json](npm/package.md)
+  * [套件管理](npm/install.md)
+  * [版本管理](npm/version.md)
+  * [script](npm/script.md)
+  * [實用補充](npm/mise.md)
 * [JavaScript 基礎](js/README.md)
   * [基本資料型別](js/type.md)
   * [強制轉型](js/coercion.md)

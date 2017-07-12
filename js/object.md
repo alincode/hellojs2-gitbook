@@ -70,7 +70,7 @@ a.name = 'eason';
 console.log(a.name);
 console.log(b.name);
 ```
-<!-- eason, eason -->
+<!-- 傳址 eason, eason -->
 
 **範例二**
 
@@ -90,7 +90,7 @@ callMe(b);
 console.log(a.name);
 console.log(b.name);
 ```
-<!-- eason, eason -->
+<!-- 傳址：eason, eason -->
 
 **範例三**
 

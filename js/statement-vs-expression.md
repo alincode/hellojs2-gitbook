@@ -20,8 +20,9 @@ she is a cook.
 
 ### expression （表達式)
 
-* 會產生一個值(會回傳一個值)
-* 物件實字
+會產生一個值(會回傳一個值)
+
+* 物件實字 (object literals)
 
 ```
 { key1: 'value1', key2: 'value2'}

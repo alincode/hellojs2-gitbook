@@ -5,6 +5,9 @@
 * 同步事件指的是，在主線程上排隊執行的任務，只有前一個任務執行完畢，才能執行後一個任務。
 * 非同步事件指的是，先進入 task queue，task queue 通知主線程，若主線程有空該任務才會進入主線程執行。
 
+
+![](assets/event-loop.png)
+
 <!--
 1-1 start coding (async)
 2 answer customer phone (sync)

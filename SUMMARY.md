@@ -9,7 +9,7 @@
   * [實用補充](npm/mise.md)
 * [JavaScript 基礎](js/README.md)
   * [基本資料型別](js/type.md)
-  * [強制轉型 & 比較](js/coercion-and-comparison.md)
+  * [比較](js/comparison.md)
   * [statement VS expression](js/statement-vs-expression.md)
   * [提升](js/hoisting.md)
   * [範圍](js/scope.md)
@@ -22,3 +22,4 @@
   * [Callback 函式](js/callback.md)
 * [Bootstrap]()  
 
+  

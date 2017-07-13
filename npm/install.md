@@ -128,8 +128,3 @@ npm list underscore
 ```
 npm link sandbox /Users/ailinliu/sandbox-module
 ```
-
-**練習題**
-
-* 安裝 Mocha 於 development 模式
-* 安裝 JQuery 於 production 模式

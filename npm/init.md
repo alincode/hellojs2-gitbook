@@ -38,7 +38,3 @@ npm init -f
   "license": "ISC"
 }
 ```
-
-**練習題**
-
-使用 npm 做專案初始化

@@ -55,8 +55,3 @@
 npm run demo
 npm start
 ```
-
-**練習題**
-
-* 建立一個最簡單的專案啟動設定
-* 新增一個名稱叫 demo 的 script，並可以成功執行。

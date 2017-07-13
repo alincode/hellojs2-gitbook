@@ -7,6 +7,7 @@
   * [版本管理](npm/version.md)
   * [script](npm/script.md)
   * [實用補充](npm/mise.md)
+  * [練習題](npm/ex.md)
 * [JavaScript 基礎](js/README.md)
   * [基本資料型別](js/type.md)
   * [比較](js/comparison.md)
@@ -20,7 +21,7 @@
   * [this](js/this.md)
   * [非同步](js/async.md)
   * [Callback 函式](js/callback.md)
-  * [練習題 & 回家作業](js/ex.md)
+  * [練習題](js/ex.md)
 * [Bootstrap]()  
 
   

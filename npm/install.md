@@ -15,18 +15,6 @@
 
 <!-- 示範有 -g -S 的情況，及沒有加 --save 的情況。 -->
 
-**安裝專案下所有的套件**
-
-```
-cd your-project-folder
-
-npm install
-// 或
-npm install --production
-// 或
-NODE_ENV=production npm install
-```
-
 **安裝指定套件到全域**
 
 * 常用於安裝工具型套件
@@ -47,6 +35,18 @@ npm install -S nodemon
 ```
 npm install --save-dev nodemon
 npm install --D nodemon
+```
+
+**安裝專案下所有的套件**
+
+```
+cd your-project-folder
+
+npm install
+// 或
+npm install --production
+// 或
+NODE_ENV=production npm install
 ```
 
 **安裝指定版本或 指定tag 的套件**
@@ -128,3 +128,8 @@ npm list underscore
 ```
 npm link sandbox /Users/ailinliu/sandbox-module
 ```
+
+**練習題**
+
+* 安裝 Mocha 於 development 模式
+* 安裝 JQuery 於 production 模式

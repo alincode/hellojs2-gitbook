@@ -1,5 +1,16 @@
 # Summary
 
+* [Bootstrap](bootstrap/README.md)
+  * [網格 (Grid)](bootstrap/grid.md)
+  * [圖片 (Image)](bootstrap/image.md)
+  * [排版 (Typography)](bootstrap/typography.md)
+  * [佈局 (Layout)](bootstrap/layout.md)
+  * [物件導向 CSS](bootstrap/oocss.md)
+  * [元件 (Component)](bootstrap/components.md)
+  * [圖示字型 (Glyphicons)](bootstrap/glyphicons.md)
+  * [JS 概念](bootstrap/js.md)
+  * [JS 下拉選單](bootstrap/js-dropdown.md)
+  * [練習題](bootstrap/ex/README.md)
 * [NPM](npm/README.md)
   * [初始化專案](npm/init.md)
   * [Package.json](npm/package.md)
@@ -21,7 +32,6 @@
   * [this](js/this.md)
   * [非同步](js/async.md)
   * [Callback 函式](js/callback.md)
-  * [練習題](js/ex.md)
-* [Bootstrap]()  
+  * [練習題](js/ex.md) 
 
-  
+    <!--* [JS 輪播效果](bootstrap/js-carousel.md)-->

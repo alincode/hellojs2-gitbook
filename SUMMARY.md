@@ -10,7 +10,7 @@
   * [元件 (Component)](bootstrap/components.md)
   * [圖示字型 (Glyphicons)](bootstrap/glyphicons.md)
   * [JS 概念](bootstrap/js.md)
-  * [練習題](bootstrap/ex/README.md)
+  * [練習題](bootstrap/ex.md)
 * [NPM](npm/README.md)
   * [初始化專案](npm/init.md)
   * [Package.json](npm/package.md)

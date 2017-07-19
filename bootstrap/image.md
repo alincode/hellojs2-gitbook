@@ -4,18 +4,36 @@
 
 **類別**
 
-* thumbnail (圖文)
 * img-rounded (圓角)
-* img-circle (圓框)
+* img-circle (圓形)
 * img-thumbnail (加外框)
 * img-responsive：圖片會佔其容器的全部寬度，而高度會按比例調整。
+* thumbnail (圖文)
 
-**圖文區塊**
+**圓角**
 
+```html
+<img src="http://fakeimg.pl/360x360/" class="img-rounded">
 ```
+
+**圓形**
+
+```html
+<img src="http://fakeimg.pl/360x360/" class="img-circle">
+```
+
+**加外框**
+
+```html
+<img src="http://fakeimg.pl/360x360/" class="img-thumbnail">
+```
+
+**圖文**
+
+```html
 <div class="thumbnail">
-  <a href="/w3images/lights.jpg">
-    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+  <a href="">
+    <img src="http://fakeimg.pl/360x360/" alt="Lights" style="width:100%">
     <div class="caption">
       <p>Lorem ipsum...</p>
     </div>

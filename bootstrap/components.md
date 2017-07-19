@@ -135,22 +135,3 @@
 ```
 
 [官方文件傳送門](http://getbootstrap.com/components/#panels)
-
-## 練習題
-
-* 建立一個完整 layout 的網站
-  * 新聞頁
-    * 包 container
-    * 加 navbar
-    * 加 image RWD  (上次教到這裡)
-    * 加漢堡包
-    * 加 icon
-    * 加麵包屑
-    * 加 navbar dropdown
-  * 商品列表頁
-    * Thumbnails
-    * 分頁 (Pagination)，需置中
-    * List group
-    * 新增 Carousel 和 Panel （結束後，先跳到 CSS 預處理器章節)
-    * 新增 Navbar Button 和基本可動的 modal
-    * 將 modal 內容，改寫成 login 表單

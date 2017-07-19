@@ -25,6 +25,7 @@
 ### 基本類別 (class)
 
 * row
+* col-lg-2
 * col-md-4
 * col-sm-6
 * col-xs-12
@@ -46,7 +47,7 @@
 
 * col-md-offset-*
 
-```
+```html
 <div class="row">
   <div class="col-md-4">.col-md-4</div>
   <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
@@ -60,7 +61,9 @@
 </div>
 ```
 
-<!-- 示範：建立一個 md 尺寸，佔四欄的區塊，位在最中央。 -->
+**練習題**
+
+![](assets/offset.png)
 
 ### 欄位排序 (Column ordering)
 
@@ -77,6 +80,10 @@
   <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
 </div>
 ```
+
+**練習題**
+
+![](assets/offset.png)
 
 ### 巢狀 (Nesting columns)
 
@@ -99,6 +106,10 @@
   </div>
 </div>
 ```
+
+**練習題**
+
+![](assets/nesting.png)
 
 ### 延伸閱讀
 

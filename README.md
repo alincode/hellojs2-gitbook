@@ -8,6 +8,9 @@
 
 HTML、CSS、JS 我們都知道，但做出來的成品，如果沒有設計師朋友幫忙調過，怎覺得上不了檯面，Bootstap 框架的出現成為工程師們的一大救星。就連現在必備的 RWD 技能，在 Bootstrap 加持下，變得輕而一舉。本週將透過邊做邊學的方式，讓大家快速入門網頁設計。
 
+本課程使用 Bootstrap 的 3.3.7 版本
+
 **前置工作**
 
 * 安裝 [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
+* 安裝 VScode - [Bootstrap 3 Snippets](https://marketplace.visualstudio.com/items?itemName=wcwhitehead.bootstrap-3-snippets) 套件

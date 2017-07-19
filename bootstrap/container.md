@@ -1,10 +1,6 @@
-# Bootstrap 佈局 (Layout)
+# Container
 
-![layout](./assets/layout.gif)
-
-### HTML5 語意元素
-
-
+<!--舉例 bootstrap vs pchome24 -->
 
 ### container 類別
 

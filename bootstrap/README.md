@@ -1,20 +1,31 @@
 # Bootstrap 介紹
 
-* 本課程使用 Bootstrap 的 3.3.7 版本
-
 **Bootstrap 是什麼？**
 
 * 由 Twitter 在 2010 年 8 月釋出 Bootstrap
-* 是一個「行動優先」設計的前端框架
+* CSS 框架 / 「行動優先」設計的前端框架
 * RWD：響應式網頁設計，英文全名 Responsive Web Design。
-* 總體結構包含：CSS、元件、Javascript、自訂架構
+* 總體結構包含：
+    * CSS
+    * 元件 (Component)
+    * Javascript
+    * 自訂架構
 
 **其他類似的框架**
 
 * [Foundation](http://foundation.zurb.com/)
-* [Pure](http://purecss.io/)
+* [Pure](http://purecss.io/)：Yahoo Inc.
 * [Semantic UI](https://semantic-ui.com/)
 * [Materialize CSS](http://materializecss.com/)
+
+[各框架比較](http://usablica.github.io/front-end-frameworks/compare.html)
+
+**特色**
+
+* Grid system and responsive design
+* Understanding CSS stylesheet
+* Re-usable components
+* JavaScript components and plug-ins
 
 **版本**
 
@@ -45,7 +56,9 @@ bootstrap/
     └── glyphicons-halflings-regular.woff2
 ```
 
-<!-- 聊：以前 icon 的做法，現在 icon 的做法。-->
+> 聊聊：以前 icon 的做法，現在 icon 的做法。
+
+* [網路開放字型格式 (WOFF) - Web 開發者指引 | MDN](https://developer.mozilla.org/zh-TW/docs/Web/Guide/WOFF)
 
 **安裝 Bootstrap**
 

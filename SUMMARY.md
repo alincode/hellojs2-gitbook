@@ -1,10 +1,11 @@
 # Summary
 
 * [Bootstrap](bootstrap/README.md)
-  * [網格 (Grid)](bootstrap/grid.md)
   * [圖片 (Image)](bootstrap/image.md)
+  * [網格 (Grid)](bootstrap/grid.md)
+  * [語意元素](bootstrap/semantic-elements.md)
   * [排版 (Typography)](bootstrap/typography.md)
-  * [佈局 (Layout)](bootstrap/layout.md)
+  * [Container](bootstrap/container.md)
   * [物件導向 CSS](bootstrap/oocss.md)
   * [元件 (Component)](bootstrap/components.md)
   * [圖示字型 (Glyphicons)](bootstrap/glyphicons.md)

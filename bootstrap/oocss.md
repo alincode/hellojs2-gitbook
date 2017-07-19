@@ -57,6 +57,13 @@ Shadow
 
 #### 容器與內容分離
 
+```html
+<a href="#" class="btn btn-info" role="button">Button</a>
+<button type="button" class="btn btn-info">Button</button>
+<input type="button" class="btn btn-info" value="Button">
+<input type="submit" class="btn btn-info" value="Button">
+```
+
 **Old Style**
 
 ```css

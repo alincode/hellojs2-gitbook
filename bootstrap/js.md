@@ -1,5 +1,7 @@
 # JS 概念
 
+[Bootstrap - Javascript](http://getbootstrap.com/javascript/)
+
 **Plugin**
 
 <!--
@@ -17,8 +19,6 @@
 * JS Scrollspy (滑動監聽)
 * JS Tab (頁籤)
 * JS Tooltip (提示框)
-
-[Bootstrap 接受最低 JQuery 版本](https://github.com/twbs/bootstrap/blob/v3.3.1/bower.json)
 
 ### 自訂屬性
 
@@ -44,15 +44,11 @@
 ## 擴充 JS
 
 ```
-bower install bootstrap-treeview
+npm install bootstrap-treeview
 ```
 
 * 添加 bootstrap-treeview.min.js
 * 添加 bootstrap-treeview.min.css
 
-* [GitHub - jonmiles/bootstrap-treeview: Tree View for Twitter Bootstrap -](https://github.com/jonmiles/bootstrap-treeview)
-* [Bootstrap Tree View](https://jonmiles.github.io/bootstrap-treeview/)
-
-### 延伸閱讀
-
-* [Bootstrap - Javascript](http://getbootstrap.com/javascript/)
+* [GitHub - bootstrap-treeview](https://github.com/jonmiles/bootstrap-treeview)
+* [Demo](https://jonmiles.github.io/bootstrap-treeview/)

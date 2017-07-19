@@ -41,6 +41,10 @@
 </div>
 ```
 
+**練習題**
+
+![](assets/image.png)
+
 **延伸閱讀**
 
 * [Bootstrap Images](http://www.w3schools.com/bootstrap/bootstrap_images.asp)

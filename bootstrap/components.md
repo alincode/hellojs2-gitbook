@@ -2,7 +2,7 @@
 
 ![components](http://getbootstrap.com/assets/img/components.png)
 
-<!--聊：用 Pubu 來介紹元件 http://www.pubu.com.tw/ -->
+聊聊：<http://www.pubu.com.tw/>
 
 ### 導覽列 (Navigation Bar)
 

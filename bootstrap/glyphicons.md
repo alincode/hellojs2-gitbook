@@ -7,22 +7,29 @@
 
 **語法**
 
-```
+```html
 <span class="glyphicon glyphicon-name"></span>
 ```
 
 **範例**
 
-```
+```html
 <button type="button" class="btn btn-info">
   <span class="glyphicon glyphicon-search"></span> Search
 </button>
 ```
 
-### 問答題
+### Font Awesome
 
-* 在沒有圖示字型的時候，是怎麼做的？
-* 為什麼會從 icon 演變到圖示字型？
+<http://fontawesome.io/>
+
+```html
+<i class="fa fa-camera-retro fa-lg"></i>
+<i class="fa fa-camera-retro fa-2x"></i>
+<i class="fa fa-camera-retro fa-3x"></i>
+<i class="fa fa-camera-retro fa-4x"></i>
+<i class="fa fa-camera-retro fa-5x"></i>
+```
 
 **延伸閱讀**
 

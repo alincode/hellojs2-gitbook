@@ -1,10 +1,5 @@
 # 排版 (Typography)
 
-<!--
-先複習 term 的命名，在開始講。
-[HTML5 筆記 - 名詞定義](https://alincode.gitbooks.io/learning-html5/content/concept/term.html)
--->
-
 **名詞定義**
 
 * 元素 element 或 標籤 tag
@@ -66,7 +61,7 @@ class 和 id 都是我們的屬性，onclick 是我們的事件。
 
 ### 轉換類別 (Transformation classes)
 
-```
+```html
 <p class="text-lowercase">Lowercased text.</p>
 <p class="text-uppercase">Uppercased text.</p>
 <p class="text-capitalize">Capitalized text.</p>
@@ -82,14 +77,14 @@ Capitalized Text.
 
 ### 縮寫 (Abbreviations)
 
-```
+```html
 <abbr title="attribute">attr</abbr>
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 ```
 
 ### 地址 (Addresses)
 
-```
+```html
 <address>
   <strong>Twitter, Inc.</strong><br>
   1355 Market Street, Suite 900<br>
@@ -107,7 +102,7 @@ Capitalized Text.
 
 靠左
 
-```
+```html
 <blockquote>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -116,7 +111,7 @@ Capitalized Text.
 
 靠右
 
-```
+```html
 <blockquote class="blockquote-reverse">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
@@ -130,7 +125,7 @@ Capitalized Text.
 * ul > li
 * ul.list-unstyled > li
 
-```
+```html
 <ul class="list-unstyled">
   <li>...</li>
 </ul>
@@ -142,7 +137,7 @@ Capitalized Text.
 
 **Inline 清單**
 
-```
+```html
 <ul class="list-inline">
   <li>...</li>
 </ul>
@@ -152,7 +147,7 @@ Capitalized Text.
 
 ![](./assets/dl.png)
 
-```
+```html
 <dl>
   <dt>...</dt>
   <dd>...</dd>
@@ -161,7 +156,7 @@ Capitalized Text.
 
 ![](./assets/dl-horizontal.png)
 
-```
+```html
 <dl class="dl-horizontal">
   <dt>...</dt>
   <dd>...</dd>
@@ -170,7 +165,9 @@ Capitalized Text.
 
 ### 補充一
 
-有時候你需要 Bootstrap h2 的 css 樣式，但卻不想使用 h2 元素的時候，你可以把 h2 當 css 名稱使用。
+* 有時候你需要 Bootstrap h2 的 css 樣式，但卻不想使用 h2 元素的時候，你可以把 h2 當 css 名稱使用。
+* 例如...
+
 
 ```html
 <h2></h2>
@@ -184,7 +181,8 @@ Capitalized Text.
 
 ### 補充二
 
-* *-inverse
+* *-horizontal (水平)
+* *-inverse (反轉)
 
 ```
 blockquote
@@ -193,6 +191,18 @@ blockquote-reverse
 navbar
 navbar-inverse
 ```
+
+<https://getbootstrap.com/examples/navbar/>
+
+### 練習題
+
+排版練習：找一段文章，使用適合的元素或類別，重新組合排版。
+
+善用 article, header, h2, section, time, p, figure, figcaption, em, u, mark 標籤。
+
+![](assets/news.png)
+
+[隱形冠軍－你家體脂計 6成啟德做的 - 中時電子報](http://www.chinatimes.com/newspapers/20160511000151-260204)
 
 ### 延伸閱讀
 

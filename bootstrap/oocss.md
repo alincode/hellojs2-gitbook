@@ -2,38 +2,111 @@
 
 **OOCSS兩大原則**
 
+* 結構與外觀分離(Separate structure and skin)
+* 容器與內容分離(Separate container and content)
+
+#### Object
+
+* panel
+
+#### 結構(Structural properties)
+
+```
+Display
+Position
+Margin
+Padding
+Height
+Width
+Overflow
+```
+
+![](assets/panel.png)
+
+* panel-heading
+* panel-body
+* panel-footer
+
 ```html
 <div class="panel panel-primary">
-  <div class="panel-heading">
-    <h3 class="panel-title">Panel title</h3>
-  </div>
-  <div class="panel-body">
-    Panel content
-  </div>
+    <div class="panel-heading">
+      <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+      Panel content
+    </div>
 </div>
 ```
 
-* 結構與外觀分離
-  * 結構
-    * media
-    * media-img
-    * media-body
-  * 外觀
-    * media-no-border
-    * media-shadow
-* 容器與內容分離
+#### 外觀(skin properties)
 
-**基本結構**
+```
+Font
+Color
+Gradient
+Shadow
+```
 
-![](assets/media1.png)
+![](assets/panel2.png)
 
-**粗框**
+* panel-primary
+* panel-info
+* panel-warning
+* panel-success
+* panel-danger
 
-![](assets/media2.png)
+#### 容器與內容分離
 
-**無框**
+**Old Style**
 
-![](assets/media3.png)
+```css
+#sidebar {
+    padding: 2px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    width: 120px;
+}
+#sidebar .list {
+    margin: 2px;
+}
+#sidebar .list .list-header {
+    font-size: 16px;
+    color: red;
+}
+#sidebar .list .list-body {
+    font-size: 12px;
+    color: #cdcdcd;
+    background-color: red;
+}
+```
+
+**Better**
+
+```css
+.sidebar {
+    padding: 2px;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    width: 120px;
+}
+ 
+.list {
+    margin: 2px;
+}
+ 
+.list-header {
+    font-size: 16px;
+    color: red
+}
+ 
+.list-body {
+    font-size: 12px;
+    color: #cdcdcd;
+    background-color: red;
+}
+```
 
 
 資料來源：[漫談 CSS 架構方法 - 以 OOCSS, SMACSS, BEM 為例](http://www.slideshare.net/kurotanshi/css-oocss-smacss-bem)

@@ -41,6 +41,12 @@
 </div>
 ```
 
+**練習題**
+
+在 lg 尺寸時，變成一列四欄，在 md 尺寸時，變成一列三欄，在 sm 尺寸時，變成一列二欄，在 xs 尺寸時，變成一列一欄。
+
+![](assets/image.png)
+
 ### 位移 (Offsetting columns)
 
 ![bootstrap offsetting columns](./assets/offsetting-columns.png)
@@ -80,10 +86,6 @@
   <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
 </div>
 ```
-
-**練習題**
-
-![](assets/offset.png)
 
 ### 巢狀 (Nesting columns)
 

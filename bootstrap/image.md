@@ -33,7 +33,7 @@
 ```html
 <div class="thumbnail">
   <a href="">
-    <img src="http://fakeimg.pl/360x360/" alt="Lights" style="width:100%">
+    <img src="http://fakeimg.pl/360x360/">
     <div class="caption">
       <p>Lorem ipsum...</p>
     </div>

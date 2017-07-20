@@ -11,16 +11,6 @@
 
 #### 結構(Structural properties)
 
-```
-Display
-Position
-Margin
-Padding
-Height
-Width
-Overflow
-```
-
 ![](assets/panel.png)
 
 * panel-heading
@@ -38,14 +28,17 @@ Overflow
 </div>
 ```
 
-#### 外觀(skin properties)
+```
+Display
+Position
+Margin
+Padding
+Height
+Width
+Overflow
+```
 
-```
-Font
-Color
-Gradient
-Shadow
-```
+#### 外觀(skin properties)
 
 ![](assets/panel2.png)
 
@@ -54,6 +47,13 @@ Shadow
 * panel-warning
 * panel-success
 * panel-danger
+
+```
+Font
+Color
+Gradient
+Shadow
+```
 
 #### 容器與內容分離
 

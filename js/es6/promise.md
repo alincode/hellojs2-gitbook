@@ -10,17 +10,37 @@
 
 ![](https://mdn.mozillademos.org/files/8633/promises.png)
 
+**狀態**
+
+* pending：等待中，為初始之狀態，即不是 fulfilled 也不是 rejected。
+* fulfilled：已實現，表示操作成功完成。
+* rejected：已拒絕，表示操作失敗。
+
+
+有可能會發生在履行(fulfill) 或拒絕的 Promise，取決於傳入了什麼給它。
+
+```js
+const promise = new Promise(function(resolve, reject) {
+  setTimeout(function() {
+		resolve('success');
+		//reject('error');
+	},2000);
+});
+
+promise.then(function(value) {
+  console.log('on fulfillment');
+}, function(reason) {
+  console.log('on rejection');
+});
+```
+
 **Promise 是什麼？**
 
-* 提供比 callback 更好的表達程式的非同步邏輯
-* 它是一種控制流程機制
-* Promise 的出現並沒有去除 callback，只是把這些 callback 的協調工作，轉交給了介於我們與其他工作之間的一種「可信任的中介機制」。
-* 它是可以輕易重複用來封裝與合成未來值的一種機制。
+* 它是一種控制流程機制，提供比 callback 更好的一種表達非同步程式邏輯。
+* Promise 的出現，並沒有去除 callback，只是把這些 callback 的協調工作，轉交給了介於我們與其他工作之間的一種「可信任的中介機制」。
+* 它是可以輕易重複用來封裝與合成「未來值」的一種機制。
 
-**Promise 相容性**
-
-* [Promise 相容性測試](http://caniuse.com/#feat=promises)
-* [ES6 Promise Polyfill](https://github.com/stefanpenner/es6-promise)
+![](assets/promise.png)
 
 ### 未來值
 
@@ -33,12 +53,6 @@ add(fetchX, fetchY, function(sum){
 ```
 <!--如何確保 x, y 同時到達，再進行加法運算？-->
 
-### 狀態
-
-* pending：等待中，為初始之狀態，即不是 fulfilled 也不是 rejected。
-* fulfilled：已實現，表示操作成功完成。
-* rejected：已拒絕，表示操作失敗。
-
 ### 方法
 
 * Promise.reject(reason)
@@ -46,24 +60,50 @@ add(fetchX, fetchY, function(sum){
 * Promise.all(iterable)
 * Promise.race(iterable)
 
-**Promise.reject(reason)**
-
-只會代表發生拒絕的情況
-
-```js
-var p1 = new Promise(function(resolve, reject)){
-  reject('Oops');
-});
-
-var p2 = new Promise.reject('Oops');
-```
-
 **Promise.resolve(value)**
 
-有可能會發生在履行(fulfill) 或拒絕的 Promise，取決於傳入了什麼給它，如果傳入給 resolve 的是一個立即的非 Promise、非 thenable 的值，那麼 promise 就會以那個值被履行。
-
+```js
+Promise.resolve("Success").then(
+  function(value) {
+    console.log(value); // Success
+  }, 
+  function(err) {
+    // 不會被呼叫
+});
 ```
-// 缺範例待補
+
+```js
+Promise.resolve(new Error("fail")).then(
+  function(value) {
+    console.log(value); // on fulfilled
+  }, 
+  function(err) {
+    // 不會被呼叫
+});
+```
+
+**Promise.reject(reason)**
+
+代表發生拒絕的情況
+
+```js
+Promise.reject('hi').then(
+  function(error) {
+    // 不會被呼叫
+  }, 
+  function(error) {
+    console.log(error); // Stacktrace
+});
+```
+
+```js
+Promise.reject(new Error("fail")).then(
+  function(error) {
+    // 不會被呼叫
+  }, 
+  function(error) {
+    console.log(error); // Stacktrace
+});
 ```
 
 **Promise.all(iterable)**
@@ -103,9 +143,6 @@ Promise.race([p1, p2, p3]).then(function(msg){
 
 **Promise.prototype.then(onFulfilled, onRejected)**
 
-* fulfillment 履行
-* rejection 拒絕
-
 ```js
 var p1 = new Promise(
   function(resolve, reject) {
@@ -115,7 +152,12 @@ var p1 = new Promise(
     // 或 reject ("Error!");
   }
 );
+```
 
+* fulfillment 履行
+* rejection 拒絕
+
+```js
 p1.then(
   // fullfilment handler
   function(value) {
@@ -143,9 +185,11 @@ p.then(null, rejected);
 ## 錯誤處理
 
 <!-- try...catch 無法處理跨非同步作業運作 -->
+
 ```js
 function func(){
   setTimeout(function(){
+    // 故意打錯的
     consoe.log('hi');
   }, 5000);
 }
@@ -157,25 +201,14 @@ try {
 }
 ```
 
-### error-first callback 風格
+**Promise 相容性**
 
-```js
-function func(cb) {
-  setTimeout(function(){
-    try {
-      cb(null, x);
-    } catch(err) {
-      cb(err);
-    }
-  })
-}
-```
+* [Promise 相容性測試](http://caniuse.com/#feat=promises)
+* [ES6 Promise Polyfill](https://github.com/stefanpenner/es6-promise)
 
 ### Promise 需注意的事項
 
 * 不要忘最後面要接 `catch`
-
-## 範例
 
 ### 只能回傳一個參數
 
@@ -201,6 +234,8 @@ var p1 = new Promise(
 
 ### Weird
 
+假如傳入給 resolve 的是一個立即的**非 Promise、非 thenable 的值**，那麼 promise 就會以那個值被履行。
+
 ```js
 var p3 = new Promise(function(resolve, reject){
   resolve('B');
@@ -224,31 +259,7 @@ p2.then(function(v){
 ```
 <!-- A B -->
 
-<!--## all 與 race 的變體-->
-
 ### 完整例子
-
-```js
-function imgLoad(url) {
-  return new Promise(function(resolve, reject) {
-    var request = new XMLHttpRequest();
-    request.open('GET', url);
-    request.responseType = 'blob';
-    request.onload = function() {
-      if (request.status === 200) {
-        resolve(request.response);
-      } else {
-        reject(Error('上傳圖片失敗，錯誤碼:' 
-                     + request.statusText));
-      }
-    };
-    request.onerror = function() {
-      reject(Error('網路異常'));
-    };
-    request.send();
-  });
-}
-```
 
 <http://jsfiddle.net/ddam2mof/3/>
 
@@ -329,25 +340,6 @@ function getArticleList(){
     $("h1").text("Lo lamento, no hay expreso :(");
   });
 })();
-```
-
-### 最簡單的範例
-
-<https://jsfiddle.net/richardcwc/qdjkreo5/>
-
-```js
-function delay() {
-	return new Promise(function(resolve,reject) {
-		setTimeout(function() {
-			resolve('success');
-			reject('error');
-		},2000);
-	});
-}
-
-delay().then(function(response) {
-	alert('Promised!');
-});
 ```
 
 ### 延伸閱讀

@@ -1,6 +1,6 @@
 # Callback
 
-* 是 Javascript 語言中要達成非同步概念的「最小基本單元」」
+* 是 Javascript 語言中要達成非同步概念的「最小基本單元」
 
 <!--
 step1 現在就要做
@@ -103,4 +103,18 @@ $("button").click(function(){
         alert("The paragraph is now hidden");
     });
 });
+```
+
+**error-first callback 風格**
+
+```js
+function func(cb) {
+  setTimeout(function(){
+    try {
+      cb(null, x);
+    } catch(err) {
+      cb(err);
+    }
+  })
+}
 ```

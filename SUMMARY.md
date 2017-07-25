@@ -31,9 +31,8 @@
   * [函式](js/function.md)
   * [this](js/this.md)
   * [非同步](js/async.md)
+  * [練習題](js/ex.md)
   * [Callback 函式](js/callback.md)
-  * [練習題](js/ex.md) 
-
-    <!--* [JS 下拉選單](bootstrap/js-dropdown.md)-->
-    <!--* [JS 輪播效果](bootstrap/js-carousel.md)-->
-    <!--* 補充 Font Awesome-->
+* [JavaScript 進階]()
+  * [原型繼承](js/prototype.md)
+  * [ES6 Promise](js/es6/promise.md)

@@ -1,11 +1,35 @@
 # Callback
 
-* 是 Javascript 語言中最基本的 async 單元。
+* 是 Javascript 語言中要達成非同步概念的「最小基本單元」」
+
+<!--
+step1 現在就要做
+step2 可以等久一點的時間在做
+-->
 
 ### 原理
 
 * 將函式傳給另一個函式
-* 把 B 函式傳給 A 函式，告訴 A 函式執行完後，呼叫 B 函式。
+
+```js
+function step1(message, callback){
+  console.log('step1');
+  step2(callback);
+}
+
+function step2(callback){
+  console.log('step2');
+  callback();
+}
+
+step1('Hello World', function(){
+  console.log('callback');
+});
+```
+
+step1 函式把 callback 函式傳給 step2 函式，告訴 step2 函式執行完後，呼叫 callback 函式。
+
+<!-- step1, step2, callback -->
 
 ### 使用情境
 
@@ -33,41 +57,45 @@
 
 <!-- 我們可以把 callback hell 拆解成外部函式放在其他地方，但我們在看程式碼的時候，就比較要在各個函式之間跳來跳去不容易閱讀。-->
 
-![](assets/callback-hell.png)
-
-### 範例
-
-**範例一**
-
 ```js
 function step1(message, callback){
   console.log('step1');
   callback();
 }
 
-function step2(){
+function step2(message, callback){
   console.log('step2');
+  callback();
 }
 
-step1('Hello World', step2);
-```
-<!-- step1, step2 -->
 
-**範例二**
-
-```js
-function add( num, callback ) {
-    num = num + 1;
-    callback( num );
+function step3(message, callback){
+  console.log('step3');
+  callback();
 }
 
-add( 2, function( ans ) {
-    console.log(ans);
+
+function step4(message, callback){
+  console.log('step4');
+  callback();
+}
+
+step1('Hello World', function(){
+  step2('Hello World', function(){
+    step3('Hello World', function(){
+      step4('Hello World', function(){  
+  
+      });
+    });
+  });
 });
 ```
-<!-- 3 -->
 
-**範例三**
+![](assets/callback-hell.png)
+
+### 範例
+
+[demo](https://www.w3schools.com/jquery/jquery_callback.asp)
 
 ```js
 $("button").click(function(){
@@ -76,7 +104,3 @@ $("button").click(function(){
     });
 });
 ```
-
-### 延伸閱讀
-
-* [w3schools - JQuery callback](https://www.w3schools.com/jquery/jquery_callback.asp)

@@ -11,20 +11,23 @@
 
 ```js
 function step1() {
+  console.log('step1');
   return 'Hello......';
 }
 
 function step2() {
- console.log('step2');
+  console.log('step2');
   message += 'World';
   console.log(message);
 }
 
-console.log('step1');
+function step3() {
+  console.log('step3');
+}
+
 var message = step1();
-console.log(message);
 setTimeout(step2, 5000);
-console.log('step3');
+step3();
 ```
 
 ### 延伸閱讀

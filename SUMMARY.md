@@ -35,4 +35,4 @@
   * [練習題](js/ex.md)
 * [JavaScript 進階]()
   * [ES6 Promise](js/es6/promise.md)
-  * [原型繼承](js/prototype.md)
+  <!--* [原型繼承](js/prototype.md)-->

@@ -143,9 +143,3 @@ myApp.x = 6;
 myApp.y = 2;
 myApp.add();
 ```
-
-### 練習題
-
-* 用 Object.create 建立一個 BMI 體重計算機。
-    * 有兩個屬性 height 跟 weight
-    * 有兩個函式 getBMI 跟 getAdvice

@@ -36,4 +36,5 @@
 * [JavaScript 進階]()
   * [原型繼承](js/prototype.md)
   * [ES6 Promise](js/es6/promise.md)
+  * [練習題](js/es6/ex.md)
   

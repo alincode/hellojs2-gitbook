@@ -10,20 +10,20 @@
 * event loop
 
 ```js
-function now() {
+function step1() {
   return 'Hello......';
 }
 
-function later() {
+function step2() {
  console.log('step2');
   message += 'World';
   console.log(message);
 }
 
 console.log('step1');
-var message = now();
+var message = step1();
 console.log(message);
-setTimeout(later, 5000);
+setTimeout(step2, 5000);
 console.log('step3');
 ```
 

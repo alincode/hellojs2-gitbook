@@ -34,5 +34,6 @@
   * [Callback 函式](js/callback.md)
   * [練習題](js/ex.md)
 * [JavaScript 進階]()
+  * [原型繼承](js/prototype.md)
   * [ES6 Promise](js/es6/promise.md)
-  <!--* [原型繼承](js/prototype.md)-->
+  

@@ -57,16 +57,14 @@ Object.create(proto, [ propertiesObject ])
 var Person = {
     firstname: 'Default',
     lastname: 'Default',
-    getFullName: function(){
-        return this.firstname + " " + this.lastname;
+    getFirstName: function(){
+        return this.firstname;
     }
 }
 
-/*
-Person.getFullName2 = function() {
+Person.getFullName = function() {
   return this.firstname + " " + this.lastname;
 };
-*/
 
 var alin = Object.create(Person);
 alin.firstname = 'ailin';

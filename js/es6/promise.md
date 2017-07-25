@@ -40,7 +40,7 @@ promise.then(function(value) {
 * Promise 的出現，並沒有去除 callback，只是把這些 callback 的協調工作，轉交給了介於我們與其他工作之間的一種「可信任的中介機制」。
 * 它是可以輕易重複用來封裝與合成「未來值」的一種機制。
 
-![](assets/promise.png)
+![](../assets/promise.png)
 
 ### 未來值
 

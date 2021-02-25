@@ -1,0 +1,868 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>statement VS expression · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hoisting.html" />
+    
+    
+    <link rel="prev" href="comparison.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../bootstrap/">
+            
+                <a href="../bootstrap/">
+            
+                    
+                    Bootstrap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../bootstrap/image.html">
+            
+                <a href="../bootstrap/image.html">
+            
+                    
+                    圖片 (Image)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../bootstrap/grid.html">
+            
+                <a href="../bootstrap/grid.html">
+            
+                    
+                    網格 (Grid)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../bootstrap/semantic-elements.html">
+            
+                <a href="../bootstrap/semantic-elements.html">
+            
+                    
+                    語意元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../bootstrap/container.html">
+            
+                <a href="../bootstrap/container.html">
+            
+                    
+                    Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../bootstrap/typography.html">
+            
+                <a href="../bootstrap/typography.html">
+            
+                    
+                    排版 (Typography)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../bootstrap/oocss.html">
+            
+                <a href="../bootstrap/oocss.html">
+            
+                    
+                    物件導向 CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../bootstrap/components.html">
+            
+                <a href="../bootstrap/components.html">
+            
+                    
+                    元件 (Component)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../bootstrap/glyphicons.html">
+            
+                <a href="../bootstrap/glyphicons.html">
+            
+                    
+                    圖示字型 (Glyphicons)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../bootstrap/js.html">
+            
+                <a href="../bootstrap/js.html">
+            
+                    
+                    JS 概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../bootstrap/ex.html">
+            
+                <a href="../bootstrap/ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../npm/">
+            
+                <a href="../npm/">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../npm/init.html">
+            
+                <a href="../npm/init.html">
+            
+                    
+                    初始化專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../npm/package.html">
+            
+                <a href="../npm/package.html">
+            
+                    
+                    Package.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../npm/install.html">
+            
+                <a href="../npm/install.html">
+            
+                    
+                    套件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../npm/version.html">
+            
+                <a href="../npm/version.html">
+            
+                    
+                    版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../npm/script.html">
+            
+                <a href="../npm/script.html">
+            
+                    
+                    script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../npm/mise.html">
+            
+                <a href="../npm/mise.html">
+            
+                    
+                    實用補充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../npm/ex.html">
+            
+                <a href="../npm/ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript 基礎
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    基本資料型別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="comparison.html">
+            
+                <a href="comparison.html">
+            
+                    
+                    比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="statement-vs-expression.html">
+            
+                <a href="statement-vs-expression.html">
+            
+                    
+                    statement VS expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="scope.html">
+            
+                <a href="scope.html">
+            
+                    
+                    範圍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="the-scope-chain.html">
+            
+                <a href="the-scope-chain.html">
+            
+                    
+                    範圍鏈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="this.html">
+            
+                <a href="this.html">
+            
+                    
+                    this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="async.html">
+            
+                <a href="async.html">
+            
+                    
+                    非同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="callback.html">
+            
+                <a href="callback.html">
+            
+                    
+                    Callback 函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="ex.html">
+            
+                <a href="ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    JavaScript 進階
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="prototype.html">
+            
+                <a href="prototype.html">
+            
+                    
+                    原型繼承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="es6/promise.html">
+            
+                <a href="es6/promise.html">
+            
+                    
+                    ES6 Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="es6/ex.html">
+            
+                <a href="es6/ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../speaker.html">
+            
+                <a href="../speaker.html">
+            
+                    
+                    講師資訊
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >statement VS expression</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="expression-vs-statement">expression VS statement</h1>
+<h3 id="&#x984C;&#x5916;&#x8A71;">&#x984C;&#x5916;&#x8A71;</h3>
+<p>Syntax (&#x8A9E;&#x6CD5; / &#x6587;&#x6CD5;)</p>
+<!-- 語法決定怎麼去解讀程式碼 -->
+<pre><code>she cooks an egg.
+she is a cook.
+</code></pre><pre><code>* syntax
+  * statements
+    * expression statements
+  * expressions
+</code></pre><h3 id="expression-&#xFF08;&#x8868;&#x9054;&#x5F0F;">expression &#xFF08;&#x8868;&#x9054;&#x5F0F;)</h3>
+<p>&#x6703;&#x7522;&#x751F;&#x4E00;&#x500B;&#x503C;(&#x6703;&#x56DE;&#x50B3;&#x4E00;&#x500B;&#x503C;)</p>
+<ul>
+<li>&#x7269;&#x4EF6;&#x5BE6;&#x5B57; (object literals)</li>
+</ul>
+<pre><code>{ key1: &apos;value1&apos;, key2: &apos;value2&apos;}
+</code></pre><ul>
+<li>function expression</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> add = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x, y</span>) </span>{
+  <span class="hljs-keyword">return</span> x + y;
+}
+add(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+</code></pre>
+<ul>
+<li>invoking function expression (&#x7ACB;&#x5373;&#x547C;&#x53EB;&#x51FD;&#x5F0F;)</li>
+</ul>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&quot;hello!&quot;</span>);
+})();
+</code></pre>
+<h3 id="statement-&#xFF08;&#x9673;&#x8FF0;&#x5F0F;">statement &#xFF08;&#x9673;&#x8FF0;&#x5F0F;)</h3>
+<!--Statements are the building blocks of every program. -->
+<ul>
+<li>&#x5B8C;&#x6210;&#x67D0;&#x9805;&#x4EFB;&#x52D9;&#x7684;&#x64CD;&#x4F5C;</li>
+<li>&#x6703;&#x7522;&#x751F;&#x9644;&#x5F71;&#x97FF; (side effect)</li>
+</ul>
+<!-- 解釋什麼叫 side effect -->
+<!-- 會影響一個變數或物件的狀態 -->
+<!--通常一個 statement 是獨立的，只會完成某項任務，不過如果它影響了整個程式例如: 異動了機器內部的狀態，或者影響後面的 statement，這些造成的改變我們就稱為 side effect (副作用)-->
+<p>&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x <span class="hljs-comment">// &#x5BA3;&#x544A;</span>
+x = <span class="hljs-number">1</span>; <span class="hljs-comment">// &#x8CE6;&#x4E88;&#x503C;</span>
+
+<span class="hljs-comment">// &#x689D;&#x4EF6;&#x5224;&#x65B7;</span>
+<span class="hljs-keyword">if</span>(x &gt; <span class="hljs-number">0</span>){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hi hi&apos;</span>);
+}
+</code></pre>
+<p><strong>statement block</strong></p>
+<pre><code class="lang-c#">static void main(){
+  var counter;
+  counter = 1;
+  // do something...
+  // do something...
+  // do something...
+  // do something...
+}
+</code></pre>
+<h4 id="function-declaration--function-statement">function declaration / function statement</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a,b</span>) </span>{<span class="hljs-keyword">return</span> a + b};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hi &apos;</span> + name);
+}
+hi(<span class="hljs-string">&apos;alincode&apos;</span>);
+</code></pre>
+<h4 id="declaration-statement">declaration statement</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> message;
+</code></pre>
+<h4 id="expression-statement">expression statement</h4>
+<ul>
+<li>expression statements &#x5C6C;&#x65BC;&#x4E00;&#x7A2E;&#x7279;&#x6B8A;&#x7684; statements&#xFF0C;&#x6703;&#x7522;&#x751F;&#x4E00;&#x500B;&#x503C;&#xFF0C;&#x4E26;&#x5B8C;&#x6210;&#x67D0;&#x9805;&#x4EFB;&#x52D9;&#x3002;</li>
+</ul>
+<pre><code>x += 1;
+
+counter++;
+</code></pre><p>&#x5982;&#x679C;&#x5728;&#x59CB;&#x65BC; statement &#x4F4D;&#x7F6E;&#x7684;&#x5730;&#x65B9;&#x653E;&#x5165; expressions&#xFF0C;&#x5C31;&#x53EB;&#x505A; expression statement&#x3002;</p>
+<!--
+我們已經看到有一些 expression 和 statement 語法上是沒有區別的。
+這意味著相同的程式碼會有不同行為取決於它出現在 expression 的位置，
+或者是 statement 位置。
+-->
+<!--為了防止產生疑慮，javascript 會禁止 expression statement 使用 {} 或 function 開頭。-->
+<h3 id="expression-&#x8207;-statement-&#x4E4B;&#x9593;&#x660E;&#x986F;&#x7684;&#x5DEE;&#x7570;">expression &#x8207; statement &#x4E4B;&#x9593;&#x660E;&#x986F;&#x7684;&#x5DEE;&#x7570;</h3>
+<ul>
+<li>statement &#x4F4D;&#x7F6E;&#xFF0C;&#x4E00;&#x5B9A;&#x53EF;&#x4EE5;&#x653E; expression&#xFF0C;&#x4F46; expression &#x4F4D;&#x7F6E;&#xFF0C;&#x5927;&#x591A;&#x6578;&#x60C5;&#x6CC1;&#x90FD;&#x4E0D;&#x80FD;&#x653E; statement&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-number">2</span>;
+
+<span class="hljs-keyword">if</span>(x &gt;= <span class="hljs-number">0</span>){
+  x = y;
+} <span class="hljs-keyword">else</span> {
+  x = -y;
+}
+</code></pre>
+<ul>
+<li>expression&#xFF1A;&#x4E00;&#x5B9A;&#x6709;&#x56DE;&#x50B3;&#x503C;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-number">2</span>;
+
+<span class="hljs-keyword">var</span> x = (y &gt;= <span class="hljs-number">0</span> ? y: -y);
+</code></pre>
+<h3 id="function-expression-vs-function-statement">function expression VS function statement</h3>
+<p><strong>function expression</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> addFunc = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x, y</span>) </span>{
+  <span class="hljs-keyword">return</span> x + y;
+}
+</code></pre>
+<p><strong>function declaration / function statement</strong></p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hi &apos;</span> + name);
+}
+hi(<span class="hljs-string">&apos;alincode&apos;</span>);
+</code></pre>
+<h3 id="&#x5EF6;&#x4F38;&#x95B1;&#x8B80;">&#x5EF6;&#x4F38;&#x95B1;&#x8B80;</h3>
+<ul>
+<li><a href="https://edux.pjwstk.edu.pl/mat/260/lec/PRG2CPP_files/node37.html" target="_blank">https://edux.pjwstk.edu.pl/mat/260/lec/PRG2CPP_files/node37.html</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="comparison.html" class="navigation navigation-prev " aria-label="Previous page: 比較">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hoisting.html" class="navigation navigation-next " aria-label="Next page: 提升">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"statement VS expression","level":"1.4.3","depth":2,"next":{"title":"提升","level":"1.4.4","depth":2,"path":"js/hoisting.md","ref":"js/hoisting.md","articles":[]},"previous":{"title":"比較","level":"1.4.2","depth":2,"path":"js/comparison.md","ref":"js/comparison.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"js/statement-vs-expression.md","mtime":"2021-02-25T00:32:58.240Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T00:33:29.841Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1040 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ES6 Promise · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ex.html" />
+    
+    
+    <link rel="prev" href="../prototype.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../bootstrap/">
+            
+                <a href="../../bootstrap/">
+            
+                    
+                    Bootstrap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../bootstrap/image.html">
+            
+                <a href="../../bootstrap/image.html">
+            
+                    
+                    圖片 (Image)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../bootstrap/grid.html">
+            
+                <a href="../../bootstrap/grid.html">
+            
+                    
+                    網格 (Grid)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../bootstrap/semantic-elements.html">
+            
+                <a href="../../bootstrap/semantic-elements.html">
+            
+                    
+                    語意元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../bootstrap/container.html">
+            
+                <a href="../../bootstrap/container.html">
+            
+                    
+                    Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../bootstrap/typography.html">
+            
+                <a href="../../bootstrap/typography.html">
+            
+                    
+                    排版 (Typography)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../bootstrap/oocss.html">
+            
+                <a href="../../bootstrap/oocss.html">
+            
+                    
+                    物件導向 CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../bootstrap/components.html">
+            
+                <a href="../../bootstrap/components.html">
+            
+                    
+                    元件 (Component)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../bootstrap/glyphicons.html">
+            
+                <a href="../../bootstrap/glyphicons.html">
+            
+                    
+                    圖示字型 (Glyphicons)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../bootstrap/js.html">
+            
+                <a href="../../bootstrap/js.html">
+            
+                    
+                    JS 概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../../bootstrap/ex.html">
+            
+                <a href="../../bootstrap/ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../npm/">
+            
+                <a href="../../npm/">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../npm/init.html">
+            
+                <a href="../../npm/init.html">
+            
+                    
+                    初始化專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../npm/package.html">
+            
+                <a href="../../npm/package.html">
+            
+                    
+                    Package.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../npm/install.html">
+            
+                <a href="../../npm/install.html">
+            
+                    
+                    套件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../npm/version.html">
+            
+                <a href="../../npm/version.html">
+            
+                    
+                    版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../npm/script.html">
+            
+                <a href="../../npm/script.html">
+            
+                    
+                    script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../npm/mise.html">
+            
+                <a href="../../npm/mise.html">
+            
+                    
+                    實用補充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../npm/ex.html">
+            
+                <a href="../../npm/ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript 基礎
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../type.html">
+            
+                <a href="../type.html">
+            
+                    
+                    基本資料型別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../comparison.html">
+            
+                <a href="../comparison.html">
+            
+                    
+                    比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../statement-vs-expression.html">
+            
+                <a href="../statement-vs-expression.html">
+            
+                    
+                    statement VS expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../hoisting.html">
+            
+                <a href="../hoisting.html">
+            
+                    
+                    提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../scope.html">
+            
+                <a href="../scope.html">
+            
+                    
+                    範圍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../the-scope-chain.html">
+            
+                <a href="../the-scope-chain.html">
+            
+                    
+                    範圍鏈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../object.html">
+            
+                <a href="../object.html">
+            
+                    
+                    物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../array.html">
+            
+                <a href="../array.html">
+            
+                    
+                    陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../this.html">
+            
+                <a href="../this.html">
+            
+                    
+                    this
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../async.html">
+            
+                <a href="../async.html">
+            
+                    
+                    非同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../callback.html">
+            
+                <a href="../callback.html">
+            
+                    
+                    Callback 函式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../ex.html">
+            
+                <a href="../ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    JavaScript 進階
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../prototype.html">
+            
+                <a href="../prototype.html">
+            
+                    
+                    原型繼承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="promise.html">
+            
+                <a href="promise.html">
+            
+                    
+                    ES6 Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="ex.html">
+            
+                <a href="ex.html">
+            
+                    
+                    練習題
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../speaker.html">
+            
+                <a href="../../speaker.html">
+            
+                    
+                    講師資訊
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ES6 Promise</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="promise">Promise</h1>
+<!-- 
+* callback 有兩個缺點，哪兩個缺點？
+1. 無法信任
+2. 流程混亂
+
+* Promise 的出現是為了修補哪一個缺點？
+-->
+<p><img src="https://mdn.mozillademos.org/files/8633/promises.png" alt=""></p>
+<p><strong>&#x72C0;&#x614B;</strong></p>
+<ul>
+<li>pending&#xFF1A;&#x7B49;&#x5F85;&#x4E2D;&#xFF0C;&#x70BA;&#x521D;&#x59CB;&#x4E4B;&#x72C0;&#x614B;&#xFF0C;&#x5373;&#x4E0D;&#x662F; fulfilled &#x4E5F;&#x4E0D;&#x662F; rejected&#x3002;</li>
+<li>fulfilled&#xFF1A;&#x5DF2;&#x5BE6;&#x73FE;&#xFF0C;&#x8868;&#x793A;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x5B8C;&#x6210;&#x3002;</li>
+<li>rejected&#xFF1A;&#x5DF2;&#x62D2;&#x7D55;&#xFF0C;&#x8868;&#x793A;&#x64CD;&#x4F5C;&#x5931;&#x6557;&#x3002;</li>
+</ul>
+<p>&#x6709;&#x53EF;&#x80FD;&#x6703;&#x767C;&#x751F;&#x5728;&#x5C65;&#x884C;(fulfill) &#x6216;&#x62D2;&#x7D55;&#x7684; Promise&#xFF0C;&#x53D6;&#x6C7A;&#x65BC;&#x50B3;&#x5165;&#x4E86;&#x4EC0;&#x9EBC;&#x7D66;&#x5B83;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        resolve(<span class="hljs-string">&apos;success&apos;</span>);
+        <span class="hljs-comment">//reject(&apos;error&apos;);</span>
+    },<span class="hljs-number">2000</span>);
+});
+
+promise.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;on fulfillment&apos;</span>);
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reason</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;on rejection&apos;</span>);
+});
+</code></pre>
+<p><strong>Promise &#x662F;&#x4EC0;&#x9EBC;&#xFF1F;</strong></p>
+<ul>
+<li>&#x5B83;&#x662F;&#x4E00;&#x7A2E;&#x63A7;&#x5236;&#x6D41;&#x7A0B;&#x6A5F;&#x5236;&#xFF0C;&#x63D0;&#x4F9B;&#x6BD4; callback &#x66F4;&#x597D;&#x7684;&#x4E00;&#x7A2E;&#x8868;&#x9054;&#x975E;&#x540C;&#x6B65;&#x7A0B;&#x5F0F;&#x908F;&#x8F2F;&#x3002;</li>
+<li>Promise &#x7684;&#x51FA;&#x73FE;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x53BB;&#x9664; callback&#xFF0C;&#x53EA;&#x662F;&#x628A;&#x9019;&#x4E9B; callback &#x7684;&#x5354;&#x8ABF;&#x5DE5;&#x4F5C;&#xFF0C;&#x8F49;&#x4EA4;&#x7D66;&#x4E86;&#x4ECB;&#x65BC;&#x6211;&#x5011;&#x8207;&#x5176;&#x4ED6;&#x5DE5;&#x4F5C;&#x4E4B;&#x9593;&#x7684;&#x4E00;&#x7A2E;&#x300C;&#x53EF;&#x4FE1;&#x4EFB;&#x7684;&#x4E2D;&#x4ECB;&#x6A5F;&#x5236;&#x300D;&#x3002;</li>
+<li>&#x5B83;&#x662F;&#x53EF;&#x4EE5;&#x8F15;&#x6613;&#x91CD;&#x8907;&#x7528;&#x4F86;&#x5C01;&#x88DD;&#x8207;&#x5408;&#x6210;&#x300C;&#x672A;&#x4F86;&#x503C;&#x300D;&#x7684;&#x4E00;&#x7A2E;&#x6A5F;&#x5236;&#x3002;</li>
+</ul>
+<p><img src="../assets/promise.png" alt=""></p>
+<h3 id="&#x672A;&#x4F86;&#x503C;">&#x672A;&#x4F86;&#x503C;</h3>
+<p>&#x7B49;&#x503C;&#x7684;&#x627F;&#x82E5; (vlue-promise)&#xFF0C;&#x4F8B;&#x5982;&#x53D6;&#x9910;&#x6536;&#x64DA;&#x3002;</p>
+<pre><code class="lang-js">add(fetchX, fetchY, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">sum</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(sum);
+});
+</code></pre>
+<!--如何確保 x, y 同時到達，再進行加法運算？-->
+<h3 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h3>
+<ul>
+<li>Promise.reject(reason)</li>
+<li>Promise.resolve(value)</li>
+<li>Promise.all(iterable)</li>
+<li>Promise.race(iterable)</li>
+</ul>
+<p><strong>Promise.resolve(value)</strong></p>
+<pre><code class="lang-js"><span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-string">&quot;Success&quot;</span>).then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(value); <span class="hljs-comment">// Success</span>
+  }, 
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// &#x4E0D;&#x6703;&#x88AB;&#x547C;&#x53EB;</span>
+});
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;fail&quot;</span>)).then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(value); <span class="hljs-comment">// on fulfilled</span>
+  }, 
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// &#x4E0D;&#x6703;&#x88AB;&#x547C;&#x53EB;</span>
+});
+</code></pre>
+<p><strong>Promise.reject(reason)</strong></p>
+<p>&#x4EE3;&#x8868;&#x767C;&#x751F;&#x62D2;&#x7D55;&#x7684;&#x60C5;&#x6CC1;</p>
+<pre><code class="lang-js"><span class="hljs-built_in">Promise</span>.reject(<span class="hljs-string">&apos;hi&apos;</span>).then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-comment">// &#x4E0D;&#x6703;&#x88AB;&#x547C;&#x53EB;</span>
+  }, 
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(error); <span class="hljs-comment">// Stacktrace</span>
+});
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-built_in">Promise</span>.reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&quot;fail&quot;</span>)).then(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-comment">// &#x4E0D;&#x6703;&#x88AB;&#x547C;&#x53EB;</span>
+  }, 
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(error); <span class="hljs-comment">// Stacktrace</span>
+});
+</code></pre>
+<p><strong>Promise.all(iterable)</strong></p>
+<p>&#x6240;&#x50B3;&#x5165;&#x7684;&#x6240;&#x6709; prmises &#x90FD;&#x5FC5;&#x9808;&#x5C65;&#x884C; (fulfill)&#xFF0C;&#x6240;&#x56DE;&#x50B3;&#x7684; promise &#x624D;&#x6703;&#x5C65;&#x884C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> p1 = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-number">1</span>);
+<span class="hljs-keyword">var</span> p2 = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-string">&apos;Hello World&apos;</span>);
+<span class="hljs-keyword">var</span> p3 = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-string">&apos;Oops&apos;</span>);
+
+<span class="hljs-built_in">Promise</span>.all([p1, p2, p3]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(msg);
+});
+
+<span class="hljs-built_in">Promise</span>.all([p1, p2, p3]).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(err);
+});
+</code></pre>
+<p><strong>Promise.race(iterable)</strong></p>
+<p>&#x53EA;&#x8981;&#x7B2C;&#x4E00;&#x500B;&#x89E3;&#x6790;&#x7684; promise &#x6703;&#x52DD;&#x51FA;&#xFF0C;&#x800C;&#x7121;&#x8AD6;&#x54EA;&#x500B;&#x89E3;&#x6790;&#x7D50;&#x679C;&#x70BA;&#x4F55;&#xFF0C;&#x90FD;&#x6703;&#x6210;&#x70BA;&#x6240;&#x56DE;&#x50B3;&#x7684; promise &#x7684;&#x89E3;&#x6790;&#x7D50;&#x679C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> p1 = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-number">1</span>);
+<span class="hljs-keyword">var</span> p2 = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-string">&apos;Hello World&apos;</span>);
+<span class="hljs-keyword">var</span> p3 = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-string">&apos;Oops&apos;</span>);
+
+<span class="hljs-built_in">Promise</span>.race([p1, p2, p3]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(msg);
+});
+</code></pre>
+<!--執行結果為 p1，但未必每次都是 p1，因為是非同步競賽。-->
+<h3 id="promise-&#x539F;&#x578B;&#x65B9;&#x6CD5;">Promise &#x539F;&#x578B;&#x65B9;&#x6CD5;</h3>
+<p><strong>Promise.prototype.then(onFulfilled, onRejected)</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        resolve(<span class="hljs-string">&quot;Success!&quot;</span>);
+    }, <span class="hljs-number">5000</span>);
+    <span class="hljs-comment">// &#x6216; reject (&quot;Error!&quot;);</span>
+  }
+);
+</code></pre>
+<ul>
+<li>fulfillment &#x5C65;&#x884C;</li>
+<li>rejection &#x62D2;&#x7D55;</li>
+</ul>
+<pre><code class="lang-js">p1.then(
+  <span class="hljs-comment">// fullfilment handler</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(value); 
+  },
+  <span class="hljs-comment">// rejection handler</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reason</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(reason);
+  }
+);
+</code></pre>
+<pre><code class="lang-js">p.then(fulfilled);
+p.then(fulfilled, rejected);
+</code></pre>
+<p><strong>Promise.prototype.catch(onRejected)</strong></p>
+<pre><code class="lang-js">p.catch(rejected);
+p.then(<span class="hljs-literal">null</span>, rejected);
+</code></pre>
+<h2 id="&#x932F;&#x8AA4;&#x8655;&#x7406;">&#x932F;&#x8AA4;&#x8655;&#x7406;</h2>
+<!-- try...catch 無法處理跨非同步作業運作 -->
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span>(<span class="hljs-params"></span>)</span>{
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">// &#x6545;&#x610F;&#x6253;&#x932F;&#x7684;</span>
+    consoe.log(<span class="hljs-string">&apos;hi&apos;</span>);
+  }, <span class="hljs-number">5000</span>);
+}
+
+<span class="hljs-keyword">try</span> {
+  func();
+} <span class="hljs-keyword">catch</span>(err){
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;I am error.&apos;</span>, err); <span class="hljs-comment">// &#x6703;&#x767C;&#x751F;&#x4EC0;&#x9EBC;&#x4E8B;&#xFF1F;</span>
+}
+</code></pre>
+<p><strong>Promise &#x76F8;&#x5BB9;&#x6027;</strong></p>
+<ul>
+<li><a href="http://caniuse.com/#feat=promises" target="_blank">Promise &#x76F8;&#x5BB9;&#x6027;&#x6E2C;&#x8A66;</a></li>
+<li><a href="https://github.com/stefanpenner/es6-promise" target="_blank">ES6 Promise Polyfill</a></li>
+</ul>
+<h3 id="promise-&#x9700;&#x6CE8;&#x610F;&#x7684;&#x4E8B;&#x9805;">Promise &#x9700;&#x6CE8;&#x610F;&#x7684;&#x4E8B;&#x9805;</h3>
+<ul>
+<li>&#x4E0D;&#x8981;&#x5FD8;&#x6700;&#x5F8C;&#x9762;&#x8981;&#x63A5; <code>catch</code></li>
+</ul>
+<h3 id="&#x53EA;&#x80FD;&#x56DE;&#x50B3;&#x4E00;&#x500B;&#x53C3;&#x6578;">&#x53EA;&#x80FD;&#x56DE;&#x50B3;&#x4E00;&#x500B;&#x53C3;&#x6578;</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    resolve(<span class="hljs-string">&quot;Success!&quot;</span>);
+  }
+);
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-keyword">let</span> obj = {
+      id: <span class="hljs-number">1</span>,
+      message: <span class="hljs-string">&apos;success&apos;</span>
+    }
+    resolve(obj);
+  }
+);
+</code></pre>
+<h3 id="weird">Weird</h3>
+<p>&#x5047;&#x5982;&#x50B3;&#x5165;&#x7D66; resolve &#x7684;&#x662F;&#x4E00;&#x500B;&#x7ACB;&#x5373;&#x7684;<strong>&#x975E; Promise&#x3001;&#x975E; thenable &#x7684;&#x503C;</strong>&#xFF0C;&#x90A3;&#x9EBC; promise &#x5C31;&#x6703;&#x4EE5;&#x90A3;&#x500B;&#x503C;&#x88AB;&#x5C65;&#x884C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> p3 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+  resolve(<span class="hljs-string">&apos;B&apos;</span>);
+});
+
+<span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+  resolve(p3);
+});
+
+<span class="hljs-keyword">var</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+  resolve(<span class="hljs-string">&apos;A&apos;</span>); <span class="hljs-comment">// immediate value</span>
+});
+
+p1.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(v);
+});
+
+p2.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(v);
+});
+</code></pre>
+<!-- A B -->
+<h3 id="&#x5B8C;&#x6574;&#x4F8B;&#x5B50;">&#x5B8C;&#x6574;&#x4F8B;&#x5B50;</h3>
+<p><a href="http://jsfiddle.net/ddam2mof/3/" target="_blank">http://jsfiddle.net/ddam2mof/3/</a></p>
+<pre><code class="lang-js">getArticleList().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">articles</span>)</span>{
+    <span class="hljs-keyword">return</span> getArticle(articles[<span class="hljs-number">0</span>].id);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">article</span>)</span>{
+    <span class="hljs-keyword">return</span> getAuthor(article);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">author</span>)</span>{
+    alert(author.email);
+});
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getAuthor</span>(<span class="hljs-params">id</span>)</span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+    $.ajax(<span class="hljs-string">&quot;http://beta.json-generator.com/api/json/get/E105pDLh&quot;</span>,{
+        author: id
+    }).done(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+        resolve(result);
+    })
+  });
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getArticle</span>(<span class="hljs-params">id</span>)</span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+    $.ajax(<span class="hljs-string">&quot;http://beta.json-generator.com/api/json/get/EkI02vUn&quot;</span>,{
+        id: id
+    }).done(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+        resolve(result);
+    })
+  });
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getArticleList</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+    $.ajax(
+    <span class="hljs-string">&quot;http://beta.json-generator.com/api/json/get/Ey8JqwIh&quot;</span>)
+    .done(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>)</span>{
+        resolve(result);
+    });
+  });
+}
+</code></pre>
+<h3 id="jquery">JQuery</h3>
+<p><a href="https://jsfiddle.net/daronwolff/n10n17ag/" target="_blank">https://jsfiddle.net/daronwolff/n10n17ag/</a></p>
+<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> restante = <span class="hljs-number">0</span>;
+  <span class="hljs-string">&apos;use strict&apos;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">wait</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done, reject</span>) </span>{
+      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">if</span> (restante &gt; <span class="hljs-number">0</span>) {
+          done();
+        } <span class="hljs-keyword">else</span> {
+          reject();
+        }
+      }, <span class="hljs-number">2000</span>);
+    });
+  }
+  wait().
+  then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">&quot;h1&quot;</span>).text(<span class="hljs-string">&quot;Ok,Preparando expresso...&quot;</span>);
+    <span class="hljs-keyword">return</span> wait();
+  }).
+  then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">&quot;h1&quot;</span>).text(<span class="hljs-string">&quot;Listo, tenga su expresos&quot;</span>);
+    <span class="hljs-keyword">return</span> wait();
+  }).
+  then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    restante -= <span class="hljs-number">1</span>;
+    $(<span class="hljs-string">&quot;h1&quot;</span>).text(<span class="hljs-string">&quot;Gracias :)&quot;</span>);
+  }).
+  catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">&quot;h1&quot;</span>).text(<span class="hljs-string">&quot;Lo lamento, no hay expreso :(&quot;</span>);
+  });
+})();
+</code></pre>
+<h3 id="&#x5EF6;&#x4F38;&#x95B1;&#x8B80;">&#x5EF6;&#x4F38;&#x95B1;&#x8B80;</h3>
+<ul>
+<li><a href="https://egghead.io/lessons/javascript-convert-a-callback-to-a-promise" target="_blank">Convert a callback to a promise - js Video Tutorial #free @eggheadio</a></li>
+<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">Promise - JavaScript | MDN</a></li>
+</ul>
+<h3 id="&#x66F4;&#x591A;&#x7BC4;&#x4F8B;">&#x66F4;&#x591A;&#x7BC4;&#x4F8B;</h3>
+<ul>
+<li><a href="https://jsfiddle.net/daronwolff/n10n17ag/" target="_blank">Javascript promise example - JSFiddle</a></li>
+<li><a href="https://jsfiddle.net/jpsierens/5g0d0ww7/9/" target="_blank">https://jsfiddle.net/jpsierens/5g0d0ww7/9/</a></li>
+<li><a href="https://github.com/mdn/fetch-examples" target="_blank">https://github.com/mdn/fetch-examples</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../prototype.html" class="navigation navigation-prev " aria-label="Previous page: 原型繼承">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ex.html" class="navigation navigation-next " aria-label="Next page: 練習題">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ES6 Promise","level":"1.5.2","depth":2,"next":{"title":"練習題","level":"1.5.3","depth":2,"path":"js/es6/ex.md","ref":"js/es6/ex.md","articles":[]},"previous":{"title":"原型繼承","level":"1.5.1","depth":2,"path":"js/prototype.md","ref":"js/prototype.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"js/es6/promise.md","mtime":"2021-02-25T00:32:58.239Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T00:33:29.841Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
